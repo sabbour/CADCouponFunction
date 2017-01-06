@@ -1,0 +1,35 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "cadsession2016functionapp"
+    },
+    "host": "cadsession2016functionapp.azurewebsites.net",
+    "paths": {
+        "/api/Generatecoupon": {
+            "post": {
+                "description": "Generates a Coupon for the named user",
+                "operationId": "RunThis",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "title": "The uri of the generated digital coupon",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

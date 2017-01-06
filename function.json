@@ -1,0 +1,23 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "blob",
+      "name": "outputBlob",
+      "path": "coupons/{name}.jpg",
+      "connection": "cadsessioncouponstore_STORAGE",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
