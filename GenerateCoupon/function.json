@@ -15,7 +15,7 @@
       "type": "blob",
       "name": "outputBlob",
       "path": "coupons/{name}.jpg",
-      "connection": "cadsessioncouponstore_STORAGE",
+      "connection": "AzureWebJobsStorage",
       "direction": "out"
     }
   ],
