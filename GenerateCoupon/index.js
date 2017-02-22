@@ -71,7 +71,7 @@ module.exports = function (context, req) {
        try
        {
 
-            var connString = process.env.cadsessioncouponstore_STORAGE;
+            var connString = process.env.AzureWebJobsStorage;
             var blobService = azure.createBlobService(connString);
 
             // Create a SAS token that expires in an hour
