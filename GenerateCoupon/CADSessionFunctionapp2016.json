@@ -2,9 +2,9 @@
     "swagger": "2.0",
     "info": {
         "version": "1.0.0",
-        "title": "cadsession2016functionapp"
+        "title": "minicadfunctionapp4pb56ec3fmsgg"
     },
-    "host": "cadsession2016functionapp.azurewebsites.net",
+    "host": "minicadfunctionapp4pb56ec3fmsgg.azurewebsites.net",
     "paths": {
         "/api/Generatecoupon": {
             "post": {
