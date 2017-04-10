@@ -8,7 +8,7 @@ module.exports = function (context, req) {
  
         var input = req;
         context.log("Contents of req " + util.inspect(input, {showHidden: false, depth: null}));    
-        name = req.body;
+        name = req.body.name;
         // Log incoming request:
         context.log('Got a request to create coupon for ' +  ' for name : ' + name );
 
