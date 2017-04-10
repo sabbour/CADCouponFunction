@@ -20,7 +20,7 @@
         },
         "repoURL": {
             "type": "string",
-            "defaultValue": "https://github.com/shanepeckham/CADCouponFunction.git",
+            "defaultValue": "https://github.com/sabbour/CADCouponFunction.git",
             "metadata": {
                 "description": "The URL for the GitHub repository that contains the project to deploy."
             }
@@ -52,7 +52,7 @@
             "kind": "functionapp",
             "name": "[variables('serverfarms_DynamicsFunction_name')]",
             "apiVersion": "2015-08-01",
-            "location": "North Europe",
+            "location": "[resourceGroup().location]",
             "properties": {
                "name": "[variables('serverfarms_DynamicsFunction_name')]",  
                 "numberOfWorkers": 0
@@ -70,7 +70,7 @@
             "kind": "Storage",
             "name": "[variables('storageAccounts_functionStorage_name')]",
             "apiVersion": "2016-01-01",
-            "location": "northeurope",
+            "location": "[resourceGroup().location]",
             "tags": {},
             "properties": {},
             "resources": [],
@@ -82,7 +82,7 @@
             "kind": "functionapp",
             "name": "[variables('sites_MiniCADFunctionApp_name')]",
             "apiVersion": "2015-08-01",
-            "location": "North Europe",
+            "location": "[resourceGroup().location]",
             "tags": {
             },
             "properties": {
